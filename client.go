@@ -46,7 +46,7 @@ import (
 
 	"github.com/ferocious-space/eveapi/esi"
 
-	"eveauth/tokenstores"
+	"github.com/ferocious-space/eveauth/tokenstores"
 )
 
 type Config struct {

@@ -32,7 +32,7 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/oauth2"
 
-	"eveauth/tokenstores"
+	"github.com/ferocious-space/eveauth/tokenstores"
 )
 
 type SSO struct {

@@ -37,8 +37,8 @@ import (
 	"github.com/ferocious-space/eveapi/esi/wallet"
 	notification "github.com/ferocious-space/eveapi/notifications"
 
-	"eveauth"
-	"eveauth/tokenstores"
+	"github.com/ferocious-space/eveauth"
+	"github.com/ferocious-space/eveauth/tokenstores"
 )
 
 func main() {
