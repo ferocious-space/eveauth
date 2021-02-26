@@ -125,6 +125,15 @@ func (c *SSO) refresh(ctx context.Context) *oauth2.Token {
 	return refreshed
 }
 
+func (c *SSO) InjectToken(t *oauth2.Token) error {
+	ts := c.config.TokenSource(context.Background(), t)
+	t, err := ts.Token()
+	if err != nil {
+		return err
+	}
+	return c.Save(t)
+}
+
 func (c *SSO) Token() (*oauth2.Token, error) {
 	// Token HAVE TO BE thread safe
 	c.mu.Lock()
